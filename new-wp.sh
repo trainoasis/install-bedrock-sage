@@ -107,6 +107,7 @@ yarn start
 printf "\n ===> ... You can login to WP here: https://$FOLDERNAME.my/wp/wp-login.php with admin/admin \n" 
 
 printf "\n ===> ... removing twenty* themes from /themes folder \n"
+
 # remove old themes
 cd $THEMES_DIR
 rm -r twenty*
