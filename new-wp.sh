@@ -70,6 +70,7 @@ echo "\n ===> ... creating db & downloading wordpress ... you will be asked for 
 # run valet command that: 
 # creates DB & installs wordpress inside $FOLDERNAME
 wp valet new $FOLDERNAME --project=bedrock > /dev/null # dont show stdout but show stderr
+#wp valet new $FOLDERNAME --project=bedrock --dbpass=local_root_password > /dev/null # if you get Error: ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO) then use this line instead of the one above and input your local mysql root password
 
 # move to the created folder (wp root)
 cd $FOLDERNAME
