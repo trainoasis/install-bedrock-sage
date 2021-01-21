@@ -13,8 +13,13 @@ If you want to avoid that, change the 2 variables inside the top of the script.
  - https://roots.io/bedrock/
  - https://roots.io/sage/
 
-
+# Configure valet wp
+- in /home/user/.wp-cli create config.yml with <br>
+`valet new:` <br>
+ ` dbuser: root # or any db creating user`<br>
+ ` dbpass: password # set yours here`
 # Example use:
  - sh new-wp.sh
+ - bash new-wp.sh
 
 # ONLY FOR LOCAL DEVELOPMENT !
